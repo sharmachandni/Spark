@@ -135,7 +135,11 @@ function main(){
   if [[ "${ROLE}" == 'Master' ]]; then
     configure_master
     run_datalab
+    apt-get update
+    apt-get install python-pandas -y
+    apt-get install -y python-dev python-pip jq
   fi
+  
 }
 
 main
