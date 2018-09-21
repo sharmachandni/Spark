@@ -134,7 +134,6 @@ function main(){
 
   if [[ "${ROLE}" == 'Master' ]]; then
     configure_master
-    run_datalab
     apt-get update
     apt-get install python-pandas -y
     curl https://bootstrap.pypa.io/get-pip.py | python3        
@@ -144,6 +143,7 @@ function main(){
     ipython profile create pyspark
         
     apt-get install -y python-dev python-pip jq
+    run_datalab
   fi
   
 }
