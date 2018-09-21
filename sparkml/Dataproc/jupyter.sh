@@ -14,7 +14,7 @@ if [[ "${ROLE}" == 'Master' ]]; then
         curl https://bootstrap.pypa.io/get-pip.py | python3        
         
         # Install iPython Notebook with friends and create a profile
-        pip3 install ipython jupyter sklearn seaborn pandas py4j gcloud jgscm
+        pip3 install ipython jupyter numpy sklearn seaborn pandas py4j gcloud tensorflow keras jgscm
         ipython profile create pyspark
         
         # Setup script for iPython Notebook so it uses the cluster's Spark
