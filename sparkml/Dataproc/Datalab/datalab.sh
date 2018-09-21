@@ -137,6 +137,12 @@ function main(){
     run_datalab
     apt-get update
     apt-get install python-pandas -y
+    curl https://bootstrap.pypa.io/get-pip.py | python3        
+        
+    # Install iPython Notebook with friends and create a profile
+    pip3 install ipython jupyter numpy sklearn seaborn pandas py4j gcloud tensorflow keras jgscm
+    ipython profile create pyspark
+        
     apt-get install -y python-dev python-pip jq
   fi
   
